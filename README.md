@@ -1,3 +1,3 @@
-# AWS-SES-AWS-Lambda-
+# Multipagewebsite-AWS-SES-Lambda
 Set up an email contact to send messages to your Gmail with AWS SES (Simple Email Service) and AWS Lambda 
 Hi there.
