@@ -125,20 +125,51 @@ Very important lesson i learned when working with fullstack development with API
 Enabling CORS on your API Gateway allows your frontend JavaScript to send requests to your Lambda function endpoint. Without CORS, the browser would block these requests, and your contact form would not be able to send emails via the API. CORS ensures secure and controlled cross-domain communication, which is essential for your contact form to work.
 
 
+22. # Created SNS Topics for Bounce & Complaint Notifications #
+
+. In order to track if emails bounce(eg if user mispelled their email address), Send alerts to my email or to store in Cloudwatch Logs.
+
+![alt text](<Bilder/Screenshot (324).png>)
+
+. Set up.
+
+![alt text](<Bilder/Screenshot (325).png>)
+
+ . With Event Destination To Cloudwatch to send alerts to store in Cloudwatch Logs.
+
+![alt text](<Bilder/Screenshot (329).png>)
+
+ . Viewing Metrics in CloudWatch 
+
+![alt text](<Bilder/Screenshot (330).png>)
+
+ . Test To see if the SNS to cloudwatch works and sends metrics to Cloudwatch by Successfully sending Test message to myself.
+
+![alt text](<Bilder/Screenshot (332).png>)
+
+ . Successfully received 
+
+![alt text](<Bilder/Screenshot (336).png>)
+
+ . and Delivery Metrics in CloudWatch reflect exacly the same thing. 
+
+![alt text](<Bilder/Screenshot (334).png>)
+
+. Check Bounce and Complaint Metrics and that nobody flagged my email.
+
+![alt text](<Bilder/Screenshot (337).png>)
+
+and all that is also possible because we configured 
+
+ 23. AWS Lambda to Use the SES send_email call Configuration Set to Cloudwatch.
+
+ ![alt text](<Bilder/Screenshot (338).png>)
+
+ 24. 
 
 
 
 
-
-
-
-
-
-
-
-
-What Happens After You Click “Next” or “Submit”
-SES will automatically create 3 DKIM CNAME records in your Route 53 hosted zone (denisriungu.de).
 
 
 
