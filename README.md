@@ -165,7 +165,6 @@ and all that is also possible because we configured
 
  ![alt text](<Bilder/Screenshot (338).png>)
 
- 24. 
 
 
 
